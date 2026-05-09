@@ -1,40 +1,53 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: Solar Phobia Knowledge Base
+description: Project architecture, design, and implementation reference for Solar Phobia.
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Architecture, design, production, and engine reference for the Unity project.
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Open Architecture
+      link: /architecture/architecture/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: Production Board
+      link: /production/epics/
+      icon: document
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+<div class="sp-doc-summary">
+	<div>
+		<strong>125 imported pages</strong>
+		<span>Architecture, engine reference, design specs, production plans, QA evidence, and registries copied into Starlight.</span>
+	</div>
+	<div>
+		<strong>Tailwind enabled</strong>
+		<span>Custom docs styling is loaded through Starlight `customCss` and Tailwind CSS.</span>
+	</div>
+</div>
+
+## Project Library
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Architecture" icon="seti:config" href="/architecture/architecture/">
+		Master architecture and project-level technical direction.
 	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
+	<Card title="Design" icon="pencil" href="/design/gdd/systems-index/">
+		GDDs, art briefs, UX specs, asset specs, and cross-system design reviews.
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Production" icon="document" href="/production/epics/">
+		Epics, stories, milestones, sprint plans, gate checks, QA, and session state.
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="Engine Reference" icon="open-book" href="/engine-reference/unity/version/">
+		Unity 6 version notes, deprecated APIs, breaking changes, and best practices.
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Registries" icon="setting" href="/docs-registry/architecture/tr-registry/">
+		Traceability and entity registry YAML exposed as readable docs pages.
+	</Card>
+	<Card title="Guides" icon="add-document" href="/guides/example/">
+		Starter guide content kept in place for future project-specific guides.
 	</Card>
 </CardGrid>

@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+    --sl-color-accent-low: #173d32;
+    --sl-color-accent: #2fa56f;
+    --sl-color-accent-high: #baf4d5;
+}
+
+.sp-doc-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.sp-doc-summary > div {
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background: var(--sl-color-gray-6);
+}
+
+.sp-doc-summary strong {
+    display: block;
+    color: var(--sl-color-white);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.sp-doc-summary span {
+    display: block;
+    margin-top: 0.35rem;
+    color: var(--sl-color-gray-2);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}

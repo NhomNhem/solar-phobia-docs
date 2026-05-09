@@ -1,0 +1,53 @@
+---
+title: Kho tài liệu Solar Phobia
+description: Kiến trúc, thiết kế, sản xuất và tham chiếu engine cho dự án Solar Phobia.
+template: splash
+hero:
+  tagline: Tài liệu kiến trúc, thiết kế, kế hoạch sản xuất và tham chiếu Unity cho dự án.
+  image:
+    file: ../../../assets/houston.webp
+  actions:
+    - text: Mở kiến trúc
+      link: /vi/architecture/architecture/
+      icon: right-arrow
+    - text: Kế hoạch sản xuất
+      link: /vi/production/epics/
+      icon: document
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<div class="sp-doc-summary">
+    <div>
+        <strong>125 trang tài liệu</strong>
+        <span>Nội dung gốc hiện ở tiếng Anh; giao diện và trang chính có thể chuyển sang tiếng Việt.</span>
+    </div>
+    <div>
+        <strong>Không nhân đôi tài liệu</strong>
+        <span>Các trang chưa dịch dùng fallback từ bản tiếng Anh thay vì copy thêm một cây file mới.</span>
+    </div>
+</div>
+
+## Thư viện dự án
+
+<CardGrid stagger>
+    <Card title="Kiến trúc" icon="seti:config" href="/vi/architecture/architecture/">
+        Kiến trúc tổng thể và các quyết định kỹ thuật cấp dự án.
+    </Card>
+    <Card title="Thiết kế" icon="pencil" href="/vi/design/gdd/systems-index/">
+        GDD, art brief, UX spec, asset spec và đánh giá liên hệ giữa các hệ thống.
+    </Card>
+    <Card title="Sản xuất" icon="document" href="/vi/production/epics/">
+        Epic, story, milestone, sprint plan, gate check, QA và trạng thái phiên làm việc.
+    </Card>
+    <Card title="Tham chiếu Engine" icon="open-book" href="/vi/engine-reference/unity/version/">
+        Ghi chú Unity 6, API lỗi thời, breaking changes và best practices.
+    </Card>
+    <Card title="Registry" icon="setting" href="/vi/docs-registry/architecture/tr-registry/">
+        Traceability registry và entity registry được hiển thị thành trang đọc được.
+    </Card>
+    <Card title="Hướng dẫn" icon="add-document" href="/vi/guides/example/">
+        Khu vực cho các hướng dẫn thao tác sau này.
+    </Card>
+</CardGrid>
