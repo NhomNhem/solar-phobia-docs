@@ -1,12 +1,14 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-
 import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://solar-phobia-docs.NhomNhem.github.io',
+  site: 'https://nhomnhem.github.io',
+
+  base: '/solar-phobia-docs',
+
   integrations: [
     starlight({
       title: {
