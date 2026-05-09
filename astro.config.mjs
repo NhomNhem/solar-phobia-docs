@@ -7,6 +7,8 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://nhomnhem.github.io',
 
+  base: '/solar-phobia-docs',
+
   integrations: [
     starlight({
       title: {
